@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Layout from '../components/Layout';
 import { X, ZoomIn } from 'lucide-react';
 import productsImage from '../assets/products-showcase.jpg';
@@ -138,7 +139,24 @@ const Products = () => {
                 </div>
                 <div className="p-6">
                   <p className="text-muted-foreground mb-4">{product.description}</p>
-                  <button className="btn-outline w-full">View Details</button>
+                  <div className="flex gap-2">
+                    <button 
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setSelectedProduct(product);
+                      }}
+                      className="btn-outline flex-1"
+                    >
+                      View Details
+                    </button>
+                    <Link 
+                      to={`/products/${product.name.toLowerCase().replace(/\s+/g, '-')}`}
+                      className="btn-hero flex-1 text-center"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      View Products
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}

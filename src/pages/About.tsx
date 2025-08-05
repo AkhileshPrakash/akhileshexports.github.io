@@ -9,8 +9,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold font-poppins mb-6 animate-fade-up">About Akhilesh Exports</h1>
           <p className="text-xl opacity-90 max-w-3xl mx-auto animate-fade-up" style={{animationDelay: '0.2s'}}>
-            A leading manufacturer and exporter of high-quality knitted garments, 
-            committed to excellence and customer satisfaction for over a decade.
+            20+ Years of Excellence in Knitted Garments. Akhilesh Exports is a Tirupur-based knitted garment manufacturer and exporter, trusted by global brands for our quality and consistency. Leading textile manufacturer specializing in high-quality knitted garments for global markets. Committed to excellence, sustainability, and customer satisfaction.
           </p>
         </div>
       </section>

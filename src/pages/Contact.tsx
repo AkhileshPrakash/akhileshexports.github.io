@@ -116,7 +116,7 @@ const Contact = () => {
       {/* Google Maps */}
       <section className="h-96">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.564!2d77.344!3d11.108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDA2JzI5LjAiTiA3N8KwMjAnMzguNCJF!5e0!3m2!1sen!2sin!4v1635787654321!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2957.144441675044!2d77.37465970909504!3d11.063555989057773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9a9d57086ad4b%3A0x179a21ee59b564d8!2sAkhilesh%20Exports!5e1!3m2!1sen!2sin!4v1754410320890!5m2!1sen!2sin"
           width="100%"
           height="100%"
           style={{ border: 0 }}

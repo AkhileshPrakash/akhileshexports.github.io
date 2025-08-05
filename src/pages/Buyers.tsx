@@ -108,9 +108,11 @@ const Buyers = () => {
                       <span>{buyer.category}</span>
                     </div>
                   </div>
-                  <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-                    <Star className="w-6 h-6 text-primary-foreground" />
-                  </div>
+                  <img 
+                    src="https://images.unsplash.com/photo-1485833077593-4278bba3f11f?w=80&h=80&fit=crop" 
+                    alt={`${buyer.name} logo`}
+                    className="w-12 h-12 object-cover rounded-lg border border-border"
+                  />
                 </div>
                 
                 <p className="text-muted-foreground mb-4">{buyer.description}</p>

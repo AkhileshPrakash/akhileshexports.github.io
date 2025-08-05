@@ -39,7 +39,7 @@ const Infrastructure = () => {
   const stats = [
     { number: "50,000+", label: "Sq Ft Factory Space" },
     { number: "100+", label: "Skilled Workers" },
-    { number: "100K+", label: "Garments/Month" },
+    { number: "150000+", label: "Month" },
     { number: "24/7", label: "Quality Monitoring" }
   ];
 
