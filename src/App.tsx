@@ -12,6 +12,7 @@ import ProductCategory from "./pages/ProductCategory";
 import Buyers from "./pages/Buyers";
 import Certificates from "./pages/Certificates";
 import Contact from "./pages/Contact";
+import ContentManager from "./pages/ContentManager";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -42,6 +43,7 @@ const App = () => (
           <Route path="/buyers" element={<Buyers />} />
           <Route path="/certificates" element={<Certificates />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/content-manager" element={<ContentManager />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
