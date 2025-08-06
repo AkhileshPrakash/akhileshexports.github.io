@@ -1,5 +1,18 @@
 import Layout from '../components/Layout';
 import { Globe, Star, TrendingUp, Users } from 'lucide-react';
+import ottoLogo from '../assets/buyers/otto.png';
+import mrLadyLogo from '../assets/buyers/mr-lady.png';
+import familyDollarLogo from '../assets/buyers/family-dollar.png';
+import lppLogo from '../assets/buyers/lpp.png';
+
+
+const buyerLogos = {
+  "OTTO": ottoLogo,
+  "MR LADY": mrLadyLogo,
+  "FAMILY DOLLAR": familyDollarLogo,
+  "LPP S.A.": lppLogo,
+};
+
 
 const Buyers = () => {
   const majorBuyers = [
@@ -109,7 +122,7 @@ const Buyers = () => {
                     </div>
                   </div>
                   <img 
-                    src="https://images.unsplash.com/photo-1485833077593-4278bba3f11f?w=80&h=80&fit=crop" 
+                    src={buyerLogos[buyer.name]} 
                     alt={`${buyer.name} logo`}
                     className="w-12 h-12 object-cover rounded-lg border border-border"
                   />

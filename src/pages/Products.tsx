@@ -2,7 +2,17 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../components/Layout';
 import { X, ZoomIn } from 'lucide-react';
-import productsImage from '../assets/products-showcase.jpg';
+//import productsImage from '../assets/products-showcase.jpg';
+import tshirtsImg from '../assets/categories/tshirts.jpg';
+import pulloversImg from '../assets/categories/pullovers.jpg';
+import sweatshirtsImg from '../assets/categories/sweatshirts.jpg';
+import pyjamasImg from '../assets/categories/pyjamas.jpg';
+import poloshirtsImg from '../assets/categories/poloshirts.jpg';
+import tanktopsImg from '../assets/categories/tanktops.jpg';
+
+
+
+
 
 const Products = () => {
   const [selectedProduct, setSelectedProduct] = useState<any>(null);
@@ -12,7 +22,7 @@ const Products = () => {
       id: 1,
       name: "T-Shirts",
       description: "High-quality cotton and cotton-blend t-shirts in various styles, colors, and sizes for men, women, and children.",
-      image: productsImage,
+      image: tshirtsImg,
       specifications: [
         "100% Cotton and Cotton Blends",
         "Single Jersey, Pique, and Rib Fabrics",
@@ -25,7 +35,7 @@ const Products = () => {
       id: 2,
       name: "Pull Overs",
       description: "Comfortable and stylish pullovers in fleece and cotton materials, perfect for casual and semi-formal wear.",
-      image: productsImage,
+      image: pulloversImg,
       specifications: [
         "Cotton Fleece and Terry",
         "Hooded and Non-hooded Styles",
@@ -38,7 +48,7 @@ const Products = () => {
       id: 3,
       name: "Sweat Shirts",
       description: "Premium quality sweatshirts designed for comfort and durability, suitable for all seasons.",
-      image: productsImage,
+      image: sweatshirtsImg,
       specifications: [
         "Heavy Weight Cotton Fleece",
         "Crew Neck and V-Neck Styles",
@@ -51,7 +61,7 @@ const Products = () => {
       id: 4,
       name: "Pyjamas",
       description: "Soft and comfortable sleepwear made from breathable fabrics for a good night's rest.",
-      image: productsImage,
+      image: pyjamasImg,
       specifications: [
         "100% Cotton and Cotton Blends",
         "Lightweight and Breathable",
@@ -64,7 +74,7 @@ const Products = () => {
       id: 5,
       name: "Polo Shirts",
       description: "Classic polo shirts in pique and jersey fabrics, ideal for corporate and casual wear.",
-      image: productsImage,
+      image: poloshirtsImg,
       specifications: [
         "Pique and Jersey Fabrics",
         "Collar and Button Placket",
@@ -77,7 +87,7 @@ const Products = () => {
       id: 6,
       name: "Tank Tops",
       description: "Comfortable tank tops and vests for summer wear and sports activities.",
-      image: productsImage,
+      image: tanktopsImg,
       specifications: [
         "Lightweight Cotton Jersey",
         "Sleeveless Design",

@@ -1,7 +1,38 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Factory, Award, Users, Globe, ShoppingBag, CheckCircle } from 'lucide-react';
 import Layout from '../components/Layout';
+import aboutImage from '../assets/about-image.jpg';
 import heroImage from '../assets/hero-image.jpg';
+import ottoLogo from '../assets/buyers/otto.png';
+import mrLadyLogo from '../assets/buyers/mr-lady.png';
+import familyDollarLogo from '../assets/buyers/family-dollar.png';
+import lppLogo from '../assets/buyers/lpp.png';
+import tshirtsImg from '../assets/categories/tshirts.jpg';
+import pulloversImg from '../assets/categories/pullovers.jpg';
+import sweatshirtsImg from '../assets/categories/sweatshirts.jpg';
+import pyjamasImg from '../assets/categories/pyjamas.jpg';
+import poloshirtsImg from '../assets/categories/poloshirts.jpg';
+import tanktopsImg from '../assets/categories/tanktops.jpg';
+
+
+
+const categoryImages = {
+  "T-Shirts": tshirtsImg,
+  "Pull Overs": pulloversImg,
+  "Sweat Shirts": sweatshirtsImg,
+  "Pyjamas": pyjamasImg,
+  "Polo Shirts": poloshirtsImg,
+  "Tank Tops": tanktopsImg,
+};
+
+
+const buyerLogos = {
+  'OTTO': ottoLogo,
+  'MR LADY': mrLadyLogo,
+  'FAMILY DOLLAR': familyDollarLogo,
+  'LPP S.A.': lppLogo,
+};
+
 
 const Index = () => {
   const features = [
@@ -96,7 +127,7 @@ const Index = () => {
             </div>
             <div className="animate-fade-up" style={{animationDelay: '0.2s'}}>
               <img 
-                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&h=400&fit=crop" 
+                src={aboutImage}  
                 alt="Textile Manufacturing" 
                 className="w-full h-80 object-cover rounded-2xl shadow-2xl"
               />
@@ -116,7 +147,7 @@ const Index = () => {
             {['OTTO', 'MR LADY', 'FAMILY DOLLAR', 'LPP S.A.'].map((buyer, index) => (
               <div key={buyer} className="feature-card text-center animate-fade-up" style={{animationDelay: `${index * 0.1}s`}}>
                 <img 
-                  src="https://images.unsplash.com/photo-1485833077593-4278bba3f11f?w=150&h=100&fit=crop" 
+                  src={buyerLogos[buyer]} 
                   alt={buyer}
                   className="w-full h-20 object-cover rounded-lg mb-4"
                 />
@@ -146,7 +177,7 @@ const Index = () => {
                 style={{animationDelay: `${index * 0.1}s`}}
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=400&h=300&fit=crop" 
+                  src={categoryImages[product]} 
                   alt={product}
                   className="w-full h-48 object-cover rounded-t-2xl"
                 />
