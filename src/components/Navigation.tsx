@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ShoppingBag } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import logoImage from '../assets/logo.png';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,9 +22,13 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 group">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <ShoppingBag className="w-6 h-6 text-primary-foreground" />
+          <Link to="/" className="flex items-center space-x-3 group">
+            <div className="w-10 h-10 rounded-lg overflow-hidden group-hover:scale-110 transition-transform duration-300">
+              <img 
+                src={logoImage} 
+                alt="Akhilesh Exports Logo" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="hidden sm:block">
               <h1 className="text-xl font-bold text-primary font-poppins">Akhilesh Exports</h1>
